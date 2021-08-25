@@ -23,6 +23,7 @@ function Main({ products, onAdd, cartItem, onRemove }) {
               {data.qty} * {data.price}{" "}
             </p>
             <button onClick={() => onRemove(data)}>Remove</button>
+            <h2>{data.price - data.price + data.qty * data.price}</h2>
           </div>
         );
       })}
